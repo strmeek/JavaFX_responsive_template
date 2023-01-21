@@ -1,0 +1,168 @@
+/* VARIABLES */
+*{
+    /* COLOR VARIABLES */
+    -FONT-COLOR: #FFF;
+    -PURE-WHITE: #FFF;
+    -SOFT-WHITE: #F4F4F9;
+    -LIGHT-GRAY: #d3d3d3;
+    -BUTTON-COLOR: #B8DBD9;
+    -POWDER-BLUE: #B8DBD9;
+    -BACKGROUND: #3F3F3F;
+    -HIGHLIGHT: #F0F465;
+}
+
+/* RESPONSIVE TEST(you can use it with classes and ID) */
+
+.search-button:medium-device{
+    -fx-background-color: -HIGHLIGHT;
+}
+
+#pane {
+    -fx-background-color: -BACKGROUND;
+}
+
+#pane:extreme-small-device {
+    -fx-background-color: #9370db;
+}
+
+#pane:small-device {
+    -fx-background-color: -HIGHLIGHT;
+}
+
+#pane:medium-device {
+    -fx-background-color: -POWDER-BLUE;
+}
+
+#pane:large-device {
+    -fx-background-color: -PURE-WHITE;
+}
+
+/* UTILITY CLASSES */
+
+.center {
+    -fx-content-display: center;
+}
+
+.dropshadow {
+    -fx-effect: dropshadow(gaussian, #000, 10, 0.1, -5, 5);
+}
+
+.dropshadow-right{
+    -fx-effect: dropshadow(gaussian, #000, 10, 0.1, 2, -1);
+}
+
+.background {
+    -fx-background-color: -BACKGROUND;
+}
+
+/* CLASSES */
+
+.copyright-label {
+    -fx-font: normal normal 0.7em 'System';
+    -fx-alignment: bottom_center;
+    -fx-text-fill: -FONT-COLOR;
+    -fx-background-color: -POWDER-BLUE;
+}
+
+/* MENU CLASSES */
+
+.menu-button {
+    -fx-text-alignment: center;
+    -fx-pref-width:144px;
+    -fx-pref-height:72px;
+    -fx-font: normal bold 1.75em 'candara';
+    -fx-text-fill: -FONT-COLOR;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+}
+
+.menu-button:hover,
+.menu-button:focused {
+    -fx-background-color: -BACKGROUND;
+    -fx-text-fill: #d3d3d3;
+}
+
+.vbox {
+    -fx-background-color: -POWDER-BLUE;
+}
+
+/* MENU/TASKS CLASSES */
+
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 0;
+}
+
+/* SEARCH BAR */
+
+.search-button {
+    -fx-text-alignment: center;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-font: normal bold 1.2em 'candara';
+    -fx-text-fill: -BACKGROUND;
+    -fx-background-color: -SOFT-WHITE;
+    -fx-background-radius: 0;
+}
+
+.search-button:hover {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-background-color: -HIGHLIGHT;
+    -fx-opacity: 0.8;
+}
+
+.textfield {
+    -fx-background-color: -SOFT-WHITE;
+    -fx-font: normal bolder 1.25em 'candara';
+    -fx-pref-height: 41px;
+    -fx-pref-width: 300px;
+    -fx-background-radius: 0;
+    -fx-padding: 3 3 3 3;
+}
+
+#pane-filter{
+    -fx-background-color: -SOFT-WHITE;
+}
+
+/* DATE SELECTOR BAR */
+
+.date-hbox {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+.date-buttons {
+    -fx-background-color: transparent;
+    -fx-pref-height: 100px;
+    -fx-pref-width: 150px;
+    -fx-font: normal bolder 1.5em 'candara';
+    -fx-text-fill: -SOFT-WHITE;
+}
+
+.date-buttons:hover {
+    -fx-text-fill: -HIGHLIGHT;
+    -fx-opacity: 0.8;
+}
+
+.date-arrow {
+    -fx-background-color: transparent;
+    -fx-blend-mode: add;
+}
+
+.date-arrow:hover {
+    -fx-blend-mode: difference;
+    -fx-background-color: -HIGHLIGHT;
+    -fx-opacity: 0.8;
+}
+
+/* TABLE WITH ALL THE TASKS */
+
+.tableview {
+    -fx-background-color: transparent;
+}
+
+.tablecolumn {
+    -fx-background-color: -SOFT-WHITE;
+    -fx-size: 30;
+}
